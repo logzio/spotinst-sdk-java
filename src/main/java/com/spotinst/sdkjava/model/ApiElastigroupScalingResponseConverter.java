@@ -30,6 +30,7 @@ class ApiElastigroupScalingResponseConverter {
                 newSpotRequest.setInstanceType(newApiSpotRequest.getInstanceType());
                 newSpotRequest.setAvailabilityZone(newApiSpotRequest.getAvailabilityZone());
                 newSpotRequest.setSpotInstanceRequestId(newApiSpotRequest.getSpotInstanceRequestId());
+                newSpotRequest.setInstanceId(newApiSpotRequest.getInstanceId());
                 newSpotRequests.add(newSpotRequest);
             }
             retVal.setNewSpotRequests(newSpotRequests);

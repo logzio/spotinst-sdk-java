@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class ApiNewSpotRequest {
     //region Members
     private String spotInstanceRequestId;
+    private String instanceId;
     private String availabilityZone;
     private String instanceType;
     //endregion
@@ -21,6 +22,14 @@ public class ApiNewSpotRequest {
 
     public void setSpotInstanceRequestId(String spotInstanceRequestId) {
         this.spotInstanceRequestId = spotInstanceRequestId;
+    }
+
+    public String getInstanceId() {
+        return instanceId;
+    }
+
+    public void setInstanceId(String instanceId) {
+        this.instanceId = instanceId;
     }
 
     public String getAvailabilityZone() {
