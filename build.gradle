@@ -1,5 +1,5 @@
 version = project.property("theVersion")
-nexusURL = project.property("nexusURL")
+ext.nexusURL = System.getenv("NEXUS_URL")
 
 group 'com.spotinst'
 version version

@@ -14,7 +14,9 @@ class ApiElastigroupActiveInstance {
     private String spotInstanceRequestId;
     private String instanceType;
     private String product;
+    private String groupId;
     private String availabilityZone;
+    private String privateIp;
     private String status;
     private Date createdAt;
     //endregion
@@ -53,12 +55,28 @@ class ApiElastigroupActiveInstance {
         this.product = product;
     }
 
+    String getGroupId() {
+        return groupId;
+    }
+
+    void setGroupId(String groupId) {
+        this.groupId = groupId;
+    }
+
     String getAvailabilityZone() {
         return availabilityZone;
     }
 
     void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
+    }
+
+    String getPrivateIp() {
+        return privateIp;
+    }
+
+    void setPrivateIp(String privateIp) {
+        this.privateIp = privateIp;
     }
 
     public String getStatus() {

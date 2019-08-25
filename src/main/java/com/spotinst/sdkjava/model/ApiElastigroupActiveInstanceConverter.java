@@ -11,7 +11,9 @@ class ApiElastigroupActiveInstanceConverter {
     static ElastigroupActiveInstance dalToBl(ApiElastigroupActiveInstance apiElastigroupActiveInstance) {
         ElastigroupActiveInstance retVal = new ElastigroupActiveInstance();
         retVal.setInstanceId(apiElastigroupActiveInstance.getInstanceId());
+        retVal.setGroupId(apiElastigroupActiveInstance.getGroupId());
         retVal.setAvailabilityZone(apiElastigroupActiveInstance.getAvailabilityZone());
+        retVal.setPrivateIp(apiElastigroupActiveInstance.getPrivateIp());
         retVal.setInstanceType(AwsInstanceTypeEnum.fromName(apiElastigroupActiveInstance.getInstanceType()));
 
         if (apiElastigroupActiveInstance.getSpotInstanceRequestId() != null) {
