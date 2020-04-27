@@ -161,6 +161,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
         <configuration>
           <quiet>true</quiet>
           <nonavbar>true</nonavbar>
@@ -196,6 +197,12 @@
         <directory>./</directory>
         <includes>
           <include>gradle.properties</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>./src/main/resources</directory>
+        <includes>
+          <include>version.txt</include>
         </includes>
       </resource>
     </resources>
